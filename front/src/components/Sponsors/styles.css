@@ -1,0 +1,61 @@
+.sponsors-container {
+  width: 593px;
+  height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sponsors-container--bottom {
+  margin-top: 92px;
+  width: 593px;
+  height: 42px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo-clusterfinanciero {
+  width: 89px;
+}
+
+.logo-asobanca {
+  width: 83px;
+}
+
+.logo-ibpf {
+  width: 69px;
+}
+
+.logo-hightelecom {
+  width: 137px;
+}
+
+.logo-ebanx {
+  width: 69px;
+}
+
+.logo-zendesk {
+  width: 78px;
+}
+/*# sourceMappingURL=styles.css.map */

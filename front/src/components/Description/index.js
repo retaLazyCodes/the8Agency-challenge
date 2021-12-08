@@ -1,6 +1,9 @@
+import { Sponsors } from "components/Sponsors"
+
 export const Description = () => {
     return (
         <div className='description'>
+            <Sponsors />
             <p className='description__text'>
                 Te invitan este webinar, donde trataremos la temática de cómo humanizar la experiencia del cliente de Banca y
                 Seguros en el nuevo entorno digital.
