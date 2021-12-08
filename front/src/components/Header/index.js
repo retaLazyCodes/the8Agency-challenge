@@ -1,4 +1,5 @@
 import headerBg from "assets/header-background.svg";
+import './styles.css';
 
 export const Header = () => {
     return (

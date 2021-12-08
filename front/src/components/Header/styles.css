@@ -1,0 +1,68 @@
+.header {
+  min-height: 13.75rem;
+  max-width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+}
+
+.header__category {
+  width: 5.5rem;
+  height: 1.75rem;
+  margin-top: 0.875rem;
+  background: #c05100;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 0.25rem;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+}
+
+.header__title {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  line-height: 1.375rem;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #02363d;
+  text-align: center;
+}
+
+.header__subtitle {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  line-height: 1.375rem;
+  text-align: center;
+  font-style: italic;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #02363d;
+}
+
+.header__text {
+  margin-top: 1.25rem;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  color: #00373e;
+}
+/*# sourceMappingURL=styles.css.map */
