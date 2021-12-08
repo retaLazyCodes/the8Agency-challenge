@@ -1,3 +1,4 @@
+import { SpeakersList } from "components/SpeakersList"
 import { Sponsors } from "components/Sponsors"
 
 export const Description = () => {
@@ -23,6 +24,8 @@ export const Description = () => {
             </p>
 
             <p className='description__text'>¡Te esperamos!</p>
+            <SpeakersList />
+            <Sponsors bottom />
         </div>
     );
 };
