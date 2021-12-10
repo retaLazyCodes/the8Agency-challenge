@@ -1,0 +1,25 @@
+@import '../../styles/variables';
+
+.form-container {
+	width: 463px;
+	height: max-content;
+	padding: 2.375rem 3rem;
+	background: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.cta {
+	margin-bottom: 1.5rem;
+	font-family: $sourceSans;
+	font-size: 1.25rem;
+	font-weight: 600;
+	color: $colorGreenStrong;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
