@@ -1,5 +1,7 @@
 import { Speaker } from "components/Speaker";
 
+import './styles.css'
+
 export const SpeakersList = () => {
     return (
         <div className='speakers'>
