@@ -1,3 +1,4 @@
+import './style.css'
 
 export const Speaker = ({ first, image, name, position }) => {
     return (
