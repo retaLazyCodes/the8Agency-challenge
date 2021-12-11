@@ -4,7 +4,7 @@
   height: -moz-max-content;
   height: max-content;
   padding: 2.375rem 3rem;
-  background: white;
+  background: #F8F9F9;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -34,5 +34,66 @@
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
+}
+
+.form__label {
+  margin-top: 1.5rem;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #02363d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.form__input, .form__select {
+  height: 3.125rem;
+  border: solid 1px #68737d;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1.25rem;
+  padding: 0.625rem;
+  border-radius: 0.125rem;
+}
+
+.form__select {
+  font-size: 1rem;
+}
+
+.form__select--unselected {
+  color: #68737d;
+}
+
+.form__button {
+  height: 3.125rem;
+  margin-top: 2.25rem;
+  background: #02363d;
+  color: #ffffff;
+  border: none;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+.form__error {
+  color: #e25151;
+  position: absolute;
+  bottom: -1.25rem;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.select-option {
+  color: #02363d;
+}
+
+.select-option--default {
+  color: #68737d;
 }
 /*# sourceMappingURL=styles.css.map */
