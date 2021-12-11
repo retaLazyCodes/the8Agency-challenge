@@ -1,6 +1,8 @@
 import { SpeakersList } from "components/SpeakersList"
 import { Sponsors } from "components/Sponsors"
 
+import './styles.css'
+
 export const Description = () => {
     return (
         <div className='description'>
@@ -16,7 +18,7 @@ export const Description = () => {
             </p>
 
             <p className='description__text'>Escucha de primera mano la voz de nuestros especialistas:</p>
-
+            <SpeakersList />
 
             <p className='description__text'>
                 Participa e inspírate para innovar y mejorar la interacción entre clientes y marcas con historias de éxito de
@@ -24,7 +26,7 @@ export const Description = () => {
             </p>
 
             <p className='description__text'>¡Te esperamos!</p>
-            <SpeakersList />
+
             <Sponsors bottom />
         </div>
     );
