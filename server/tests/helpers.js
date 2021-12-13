@@ -23,7 +23,7 @@ const initialAttendees = [
         name: "Test3",
         lastname: "Test3",
         email: "test3@test3.com",
-        country: "Brasil",
+        country: "Brazil",
         phone: "5133393090",
         job: "Backend Developer"
     }

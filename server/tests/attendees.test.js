@@ -47,7 +47,7 @@ describe('create a attendee', () => {
             name: "Lucio",
             lastname: "Hettinger",
             email: "Lucio_Hettinger@annie.ca",
-            country: "Brasil",
+            country: "Brazil",
             phone: "5133393090",
             job: "Frontend Developer"
         }
