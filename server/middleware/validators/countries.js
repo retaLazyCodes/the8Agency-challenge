@@ -1,0 +1,26 @@
+const countries = [
+    'Argentina',
+    'Bolivia',
+    'Brasil',
+    'Chile',
+    'Colombia',
+    'Costa Rica',
+    'Cuba',
+    'Ecuador',
+    'El Salvador',
+    'Granada',
+    'Guatemala',
+    'Honduras',
+    'Jamaica',
+    'México',
+    'Nicaragua',
+    'Paraguay',
+    'Panamá',
+    'Perú',
+    'Puerto Rico',
+    'República Dominicana',
+    'Uruguay',
+    'Venezuela',
+]
+
+module.exports = countries

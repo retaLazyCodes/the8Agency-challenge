@@ -1,16 +1,14 @@
 import axios from 'axios'
 import { API_URL } from './settings'
 
-const baseUrl = `${API_URL}/attendees`
-
 
 const getAll = () => {
-    const request = axios.get(baseUrl)
+    const request = axios.get(API_URL)
     return request.then(response => response.data)
 }
 
 const create = attendee => {
-    const request = axios.post(baseUrl, attendee)
+    const request = axios.post(API_URL, attendee)
     return request.then(response => response.data)
 }
 
