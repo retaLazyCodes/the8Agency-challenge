@@ -2,10 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { AppRoutes } from 'Routes';
 import './index.css'
+import { Provider } from 'react-redux'
+import { store } from './store'
 
 ReactDOM.render(
-  <React.StrictMode>
+  <Provider store={store}>
     <AppRoutes />
-  </React.StrictMode>,
+  </Provider>,
   document.getElementById('root')
 );
