@@ -111,25 +111,25 @@ export const Form = () => {
                         <option className='select-option--default' value=''>
                             Seleccione país
                         </option>
-                        <option className='select-option' value='argentina'>
+                        <option className='select-option' value='Argentina'>
                             Argentina
                         </option>
-                        <option className='select-option' value='uruguay'>
+                        <option className='select-option' value='Uruguay'>
                             Uruguay
                         </option>
-                        <option className='select-option' value='bolivia'>
+                        <option className='select-option' value='Bolivia'>
                             Bolivia
                         </option>
-                        <option className='select-option' value='brazil'>
+                        <option className='select-option' value='Brazil'>
                             Brasil
                         </option>
-                        <option className='select-option' value='chile'>
+                        <option className='select-option' value='Chile'>
                             Chile
                         </option>
-                        <option className='select-option' value='ecuador'>
+                        <option className='select-option' value='Ecuador'>
                             Ecuador
                         </option>
-                        <option className='select-option' value='venezuela'>
+                        <option className='select-option' value='Venezuela'>
                             Venezuela
                         </option>
 

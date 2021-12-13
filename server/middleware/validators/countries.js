@@ -1,7 +1,7 @@
 const countries = [
     'Argentina',
     'Bolivia',
-    'Brasil',
+    'Brazil',
     'Chile',
     'Colombia',
     'Costa Rica',

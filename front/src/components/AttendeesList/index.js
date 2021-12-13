@@ -2,7 +2,7 @@ import MaterialTable from 'material-table'
 import { useSelector } from 'react-redux';
 
 export const AttendeesList = () => {
-    const attendees = useSelector(state => state)
+    const attendees = useSelector(state => state.results)
 
     //configuración de columnas de material-table
     const columns = [
@@ -16,6 +16,9 @@ export const AttendeesList = () => {
 
     // objeto para configurar el idioma de los mensajes por defecto en material-table
     const localization = {
+        body: {
+            emptyDataSourceMessage: "No se han encontrado asistentes",
+        },
         toolbar: { searchPlaceholder: "Buscar" },
     };
 
