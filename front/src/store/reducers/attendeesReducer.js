@@ -1,3 +1,4 @@
+import { Alert } from "alertService"
 import { attendeesService } from "services/attendees"
 
 export function attendeesReducer(state = [], action) {
@@ -18,12 +19,24 @@ export function attendeesReducer(state = [], action) {
 
 export const createAttendee = (attendee) => {
     return async (dispatch) => {
-        const newAttendee = await attendeesService.create(attendee)
+        try {
+            const newAttendee = await attendeesService.create(attendee)
 
-        dispatch({
-            type: '@attendees/created',
-            payload: newAttendee
-        })
+            if (!newAttendee?.errors) {
+                dispatch({
+                    type: '@attendees/created',
+                    payload: newAttendee
+                })
+                Alert.tempNotify("Te has registrado al evento con éxito!")
+            }
+            else {
+                throw new Error('Whoops!')
+            }
+
+        } catch (error) {
+            Alert.error("Hubo un problema al intentar registrarte :(")
+        }
+
     }
 }
 
