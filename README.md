@@ -1,7 +1,7 @@
 # the8Agency-challenge
 The 8Agency fullstack technical challenge.
 
-## Ver deploy en [Netlify](https://retalazycodes-social-event.netlify.app).
+## Ver deploy en [Heroku](reta-social-event-client.herokuapp.com/).
 
 ## Rutas de la app
 - `http://localhost:3000/`          El Home de la app. Muestra un formulario para inscribirse al evento.
