@@ -1,19 +1,19 @@
 import { useForm } from 'react-hook-form'
+import { useDispatch } from 'react-redux';
+import { createAttendee } from 'store/reducers/attendeesReducer';
 import './styles.css'
 
 export const Form = () => {
 
     const { register, handleSubmit, formState: { errors } } = useForm();
-
+    const dispatch = useDispatch()
 
     const onSubmit = () => {
 
         const form = document.getElementById("event-form")
         const transactionFormData = new FormData(form)
         const transactionObj = convertFormDataToTransactionObj(transactionFormData)
-        console.log(transactionObj)
-        // Send the form data to the DB
-
+        dispatch(createAttendee(transactionObj))
     };
 
     const convertFormDataToTransactionObj = (transactionFormData) => {
