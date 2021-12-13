@@ -1,4 +1,4 @@
-require("./dbConnect")
+require("./config/dbConnect")
 const express = require("express")
 const app = express()
 const cors = require('cors');
