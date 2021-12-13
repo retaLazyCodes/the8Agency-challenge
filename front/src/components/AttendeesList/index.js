@@ -23,7 +23,7 @@ export const AttendeesList = () => {
     };
 
     return (
-        <div style={{ maxWidth: '90%', margin: 'auto' }}>
+        <div style={{ maxWidth: '90vw', overflow: 'auto' }}>
             <div>
                 <MaterialTable
                     title="Lista de Asistentes"
