@@ -1,10 +1,12 @@
 .form-container {
-  width: 463px;
+  width: 100%;
+  min-width: 370px;
+  max-width: 463px;
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
   padding: 2.375rem 3rem;
-  background: #F8F9F9;
+  background: #f8f9f9;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -79,6 +81,12 @@
   font-weight: 600;
   font-size: 1.25rem;
   cursor: pointer;
+  -webkit-transition: background ease 0.1s;
+  transition: background ease 0.1s;
+}
+
+.form__button:hover {
+  background: #c05100;
 }
 
 .form__error {
@@ -96,5 +104,11 @@
 
 .select-option--default {
   color: #68737d;
+}
+
+@media (min-width: 992px) {
+  .form-container {
+    margin-left: 2rem;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

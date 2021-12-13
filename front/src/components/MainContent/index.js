@@ -5,9 +5,11 @@ import './styles.css';
 
 export const MainContent = () => {
     return (
-        <div className='main-content'>
-            <Description />
-            <Form />
+        <div className='outside-container'>
+            <div className='main-content'>
+                <Description />
+                <Form />
+            </div>
         </div>
     );
 };

@@ -45,4 +45,19 @@
   border: 1px solid #e8e8e8;
   margin-bottom: 62px;
 }
+
+@media (min-width: 576px) {
+  .footer__content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .footer__copyright {
+    margin: 0;
+  }
+  .bottom-line {
+    margin-bottom: 62px;
+  }
+}
 /*# sourceMappingURL=styles.css.map */

@@ -58,4 +58,10 @@
 .logo-zendesk {
   width: 78px;
 }
+
+@media (mix-width: 992px) {
+  .sponsors-container--bottom {
+    margin-bottom: 0;
+  }
+}
 /*# sourceMappingURL=styles.css.map */

@@ -28,7 +28,22 @@
 	width: 1140px;
 	max-width: 80vw;
 	height: 1px;
-
 	border: 1px solid $colorGreySoft;
 	margin-bottom: 62px;
+}
+
+@media (min-width: $screenMd) {
+	.footer {
+		&__content {
+			flex-direction: row;
+		}
+
+		&__copyright {
+			margin: 0;
+		}
+	}
+
+	.bottom-line {
+		margin-bottom: 62px;
+	}
 }
