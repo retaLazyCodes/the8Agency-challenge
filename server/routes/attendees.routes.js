@@ -1,18 +1,18 @@
 const express = require("express");
 const router = express.Router()
 const Attendee = require("../models/Attendee");
-const { validationData } = require("../middleware/validators/validationData")
+const { validationData } = require("../middleware/validators/validationData");
+const paginatedResults = require("../middleware/paginatedResults");
 
 
 /**
  * @desc    - get all Attendees
  * @method  - GET
  */
-router.get("/",
+router.get("/", paginatedResults(Attendee),
     async (req, res, next) => {
         try {
-            const attendees = await Attendee.find()
-            res.status(200).json(attendees)
+            res.status(200).json(res.paginatedResults)
         } catch (err) {
             next(err)
         }
