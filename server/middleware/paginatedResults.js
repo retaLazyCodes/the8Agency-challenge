@@ -3,7 +3,6 @@ module.exports = paginatedResults
 
 function paginatedResults(model) {
     return async (req, res, next) => {
-        console.log(req.query)
         const page = parseInt(req.query.page)
         const limit = parseInt(req.query.limit)
 

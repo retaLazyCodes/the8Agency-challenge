@@ -33,7 +33,7 @@ const initialAttendees = [
 const getAllCountriesFromAttendees = async () => {
     const response = await api.get('/api/attendees')
     return {
-        countries: response.body.map(attendee => attendee.country),
+        countries: response.body.results.map(attendee => attendee.country),
         response
     }
 }

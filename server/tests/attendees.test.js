@@ -29,7 +29,7 @@ describe('GET all attendees', () => {
         const {
             response
         } = await getAllCountriesFromAttendees()
-        expect(response.body).toHaveLength(initialAttendees.length)
+        expect(response.body.results).toHaveLength(initialAttendees.length)
     })
 
     test('the first attendee is from Argentina', async () => {
@@ -37,6 +37,50 @@ describe('GET all attendees', () => {
             countries
         } = await getAllCountriesFromAttendees()
         expect(countries[0]).toContain('Argentina')
+    })
+})
+
+
+describe('create a attendee', () => {
+    test('is possible with a valid attendee', async () => {
+        const newAttendee = {
+            name: "Lucio",
+            lastname: "Hettinger",
+            email: "Lucio_Hettinger@annie.ca",
+            country: "Brasil",
+            phone: "5133393090",
+            job: "Frontend Developer"
+        }
+
+        await api
+            .post('/api/attendees')
+            .send(newAttendee)
+            .expect(201)
+            .expect('Content-Type', /application\/json/)
+
+        const { countries, response } = await getAllCountriesFromAttendees()
+
+        expect(response.body.results).toHaveLength(initialAttendees.length + 1)
+        expect(countries).toContain(newAttendee.country)
+    })
+
+    test('is not possible with an invalid attendee', async () => {
+        const newAttendee = {
+            name: "Lucio",
+            lastname: "Hettinger",
+            email: "Lucio_Hettinger@annie.ca",
+            country: "Brasil",
+            phone: "5133393090"
+        }
+
+        await api
+            .post('/api/attendees')
+            .send(newAttendee)
+            .expect(422)
+
+        const response = await api.get('/api/attendees')
+
+        expect(response.body.results).toHaveLength(initialAttendees.length)
     })
 })
 
