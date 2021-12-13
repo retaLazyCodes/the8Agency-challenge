@@ -1,17 +1,8 @@
-require("./config/dbConnect")
-const express = require("express")
-const app = express()
-const cors = require('cors');
+const app = require('./app')
+const port = process.env.PORT ? process.env.PORT : 3001
 
-app.use(express.json());
-app.use(cors());
-app.options('*', cors());
-
-
-const PORT = 3001
-
-app.use("/", require("./routes/attendees.routes"))
-
-app.listen(PORT, () => {
-    console.log(`ejecutando en el puerto ${PORT}`)
+const server = app.listen(port, () => {
+    console.log('Running server at port: ' + port)
 })
+
+module.exports = { app, server }

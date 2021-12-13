@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router()
 const Attendee = require("../models/Attendee");
 
-router.get("/attendees", async (req, res, next) => {
+router.get("/", async (req, res, next) => {
     try {
         const attendees = await Attendee.find()
         res.status(200).json(attendees)
@@ -11,7 +11,7 @@ router.get("/attendees", async (req, res, next) => {
     }
 })
 
-router.post("/attendees", async (req, res, next) => {
+router.post("/", async (req, res, next) => {
     console.log(req.body)
     const { name, lastname, email, country, phone, job } = req.body;
 
